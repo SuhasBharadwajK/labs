@@ -10,6 +10,7 @@
 </head>
 <script>
     $('iframe').load(function () {
+        debugger;
         $('iframe').contents().find("head")
             .append($(`<style type='text/css'> .UrlBar { display: none; } main > nav { display: none !important; } </style>`));
     });
